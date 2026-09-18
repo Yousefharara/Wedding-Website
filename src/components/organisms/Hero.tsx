@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-4 pb-16 pt-28 sm:px-6"
+      className="relative container-md flex min-h-screen flex-col items-center justify-center pb-16 pt-28"
     >
       {/* الآية الكريمة */}
       <motion.blockquote

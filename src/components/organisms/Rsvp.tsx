@@ -99,7 +99,7 @@ export default function Rsvp() {
   );
 
   return (
-    <section id="rsvp" className="relative mx-auto max-w-3xl px-4 py-24 sm:px-6">
+    <section id="rsvp" className="relative container-sm py-24">
       <OrnamentDivider className="mb-8" />
       <SectionTitle
         eyebrow="نقترب من اللحظة"

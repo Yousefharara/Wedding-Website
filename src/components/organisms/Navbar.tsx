@@ -28,13 +28,13 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={cn(
-        "fixed inset-x-0 top-0 z-40 transition-all duration-500",
+        "fixed inset-x-0 border-b border-transparent top-0 z-40 transition-all duration-500",
         scrolled
           ? "border-b border-border/70 bg-white/75 shadow-sm backdrop-blur-xl"
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto outli flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <nav className="container-md flex h-16 items-center justify-between">
         <button
           type="button"
           onClick={() => scrollToSection("hero")}

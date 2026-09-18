@@ -84,7 +84,7 @@ export default function Guestbook() {
   };
 
   return (
-    <section id="guestbook" className="relative mx-auto max-w-5xl px-4 py-24 sm:px-6">
+    <section id="guestbook" className="relative container-sm py-24 ">
       <OrnamentDivider className="mb-8" />
       <SectionTitle
         eyebrow="كلماتكم تسعدنا"

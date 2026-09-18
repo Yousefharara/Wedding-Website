@@ -222,18 +222,22 @@ body {
   animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* ===== معرض الصور: منزلق CSS أصلي ===== */
+/* ===== معرض الصور: منزلق CSS راقٍ ===== */
 .gallery-scroller {
   position: relative;
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(214, 102, 143, 0.6) transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   outline: none;
+  padding: 0.75rem 0.25rem;
+}
+.gallery-scroller::-webkit-scrollbar {
+  display: none;
 }
 .gallery-scroller:focus-visible {
   box-shadow: 0 0 0 3px rgba(214, 102, 143, 0.35);
@@ -242,63 +246,58 @@ body {
 
 /* الصور: أبناء مرنون مع نقطة تثبيت في المنتصف */
 .gallery-scroller > figure {
-  flex: 0 0 78%;
+  flex: 0 0 82%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   scroll-margin-inline: 1rem;
 }
 @media (min-width: 640px) {
   .gallery-scroller > figure {
-    flex-basis: 46%;
+    flex-basis: 48%;
   }
 }
 @media (min-width: 1024px) {
   .gallery-scroller > figure {
-    flex-basis: 34%;
+    flex-basis: 32%;
   }
 }
 
-/* شريط التمرير (fallback لطيف عند غياب دعم أزرار scroll-button) */
-.gallery-scroller::-webkit-scrollbar {
-  /* height: 6px; */
+/* أزرار التنقل التفاعلية الزجاجية */
+.gallery-nav-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(201, 162, 90, 0.6);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 24px rgba(89, 35, 58, 0.18);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #59233a;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-nav-btn:hover {
+  background-color: #ffffff;
+  color: #d6668f;
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(214, 102, 143, 0.3);
+}
+.gallery-nav-btn:active {
+  transform: scale(0.95);
+}
+.gallery-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* إخفاء شريط التمرير لمحتويات النقاط */
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-/* .gallery-scroller::-webkit-scrollbar-thumb {
-  background: rgba(214, 102, 143, 0.6);
-  border-radius: 999px;
-}
-.gallery-scroller::-webkit-scrollbar-track {
-  background: transparent;
-} */
-
-/* ===== أزرار التمرير ::scroll-button ===== */
-.gallery-scroller::scroll-button(right),
-.gallery-scroller::scroll-button(left) {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(201, 162, 90, 0.55);
-  background: rgba(255, 255, 255, 0.9) center / 1.4rem no-repeat;
-  box-shadow: 0 8px 22px rgba(89, 35, 58, 0.2);
-  backdrop-filter: blur(4px);
-  cursor: pointer;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
-  transition: transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
-}
-.gallery-scroller::scroll-button(right) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d6668f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18l6-6-6-6'/%3E%3C/svg%3E");
-  right: 0.5rem;
-}
-.gallery-scroller::scroll-button(left) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d6668f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 18l-6-6 6-6'/%3E%3C/svg%3E");
-  left: 0.5rem;
-}
-.gallery-scroller::scroll-button(right):hover,
-.gallery-scroller::scroll-button(left):hover {
-  background-color: #ffffff;
-  transform: scale(1.08);
-}
-.gallery-scroller::scroll-button(right):active,
-.gallery-scroller::scroll-button(left):active {
-  transform: scale(0.95);
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

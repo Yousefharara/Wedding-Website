@@ -260,15 +260,16 @@ body {
 
 /* شريط التمرير (fallback لطيف عند غياب دعم أزرار scroll-button) */
 .gallery-scroller::-webkit-scrollbar {
-  height: 6px;
+  /* height: 6px; */
+  display: none;
 }
-.gallery-scroller::-webkit-scrollbar-thumb {
+/* .gallery-scroller::-webkit-scrollbar-thumb {
   background: rgba(214, 102, 143, 0.6);
   border-radius: 999px;
 }
 .gallery-scroller::-webkit-scrollbar-track {
   background: transparent;
-}
+} */
 
 /* ===== أزرار التمرير ::scroll-button ===== */
 .gallery-scroller::scroll-button(right),

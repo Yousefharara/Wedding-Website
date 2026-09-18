@@ -8,7 +8,7 @@ function Unit({ value, label }: { value: string; label: string }) {
     <div className="flex flex-col items-center gap-2.5">
       <div className="flex gap-1.5 sm:gap-2">
         {value.split("").map((char, i) => (
-          <FlipUnit key={`${value}-${i}`} value={char} />
+          <FlipUnit key={i} value={char} />
         ))}
       </div>
       <span className="text-sm font-bold text-wine/80">{label}</span>
@@ -39,7 +39,7 @@ export default function CountdownCounter() {
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="flex items-start justify-center"
-      dir="rtl"
+      dir="ltr"
     >
       <div className="flex items-start gap-3 sm:gap-5">
         <Unit value={days} label="أيام" />

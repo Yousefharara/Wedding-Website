@@ -14,9 +14,9 @@ export const SITE_CONFIG: SiteConfig = {
     brideEn: "Jana",
   },
   // غيّر هذا التاريخ والساعة لموعد زفافكم الفعلي
-  weddingDate: "2026-12-24T19:00:00+03:00",
-  dateLabel: "الخميس، 24 ديسمبر 2026",
-  timeLabel: "الساعة 7:00 مساءً",
+  weddingDate: "2026-10-10T19:00:00+03:00",
+  dateLabel: "الخميس، 10 أكتوبر 2026",
+  timeLabel: "الساعة 5:00 مساءً",
   venue: {
     name: "قاعة الأميرات للمناسبات",
     address: "شارع النيل، أمام الكورنيش",

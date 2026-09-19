@@ -65,9 +65,9 @@ src/
   components/
     ui/          ← atoms: buttons, inputs, radios, cards (shadcn)
     atoms/       ← SectionTitle, OrnamentDivider, FloatingArtifacts
-    molecules/   ← FlipUnit, CountdownCounter, Dove
+    molecules/   ← FlipUnit, CountdownCounter
     organisms/   ← Navbar, Hero, Venue, Gallery, Program, CountdownSection,
-                   Rsvp, Guestbook, Footer, MusicPlayer, DoveLayer,
+                   Rsvp, Guestbook, Footer, MusicPlaye,
                    intro/{IntroSequence, WeddingCard, Door}
     templates/   ← HomeTemplate
   constants/     ← site.ts (كل بيانات الموقع)

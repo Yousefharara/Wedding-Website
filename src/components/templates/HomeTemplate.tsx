@@ -12,7 +12,6 @@ import Rsvp from "@/components/organisms/Rsvp";
 import Guestbook from "@/components/organisms/Guestbook";
 import Footer from "@/components/organisms/Footer";
 import MusicPlayer from "@/components/organisms/MusicPlayer";
-import DoveLayer from "@/components/organisms/DoveLayer";
 
 interface HomeTemplateProps {
   entered: boolean;
@@ -32,7 +31,6 @@ export default function HomeTemplate({ entered }: HomeTemplateProps) {
       className="relative min-h-screen"
     >
       <FloatingArtifacts enabled={entered} />
-      <DoveLayer />
       <Navbar />
       <Hero />
       <Gallery />

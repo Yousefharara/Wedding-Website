@@ -12,7 +12,7 @@ function buildCalendarUrl(): string {
   const end = new Date(start.getTime() + 3 * 60 * 60 * 1000);
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: `زفاف ${SITE_CONFIG.couple.groom} و ${SITE_CONFIG.couple.bride}`,
+    text: `خطوبة ${SITE_CONFIG.couple.groom} و ${SITE_CONFIG.couple.bride}`,
     dates: `${start.toISOString().replace(/[-:]/g, "").split(".")[0]}Z/${end.toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
     details: `${SITE_CONFIG.venue.name}، ${SITE_CONFIG.venue.address}، ${SITE_CONFIG.venue.city}`,
     location: `${SITE_CONFIG.venue.name}`,
@@ -59,7 +59,7 @@ export default function CountdownSection() {
           >
             <a href={buildCalendarUrl()} target="_blank" rel="noreferrer">
               <CalendarPlus className="h-5 w-5" />
-              أضف الزفاف إلى تقويمك
+              أضف الخطوبة إلى تقويمك
             </a>
           </Button>
         </motion.div>

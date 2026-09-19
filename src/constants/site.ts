@@ -13,7 +13,7 @@ export const SITE_CONFIG: SiteConfig = {
     groomEn: "Omar",
     brideEn: "Jana",
   },
-  // غيّر هذا التاريخ والساعة لموعد زفافكم الفعلي
+  // غيّر هذا التاريخ والساعة لموعد خطوبتكم الفعلي
   weddingDate: "2026-10-10T19:00:00+03:00",
   dateLabel: "الخميس، 10 أكتوبر 2026",
   timeLabel: "الساعة 5:00 مساءً",
@@ -26,18 +26,18 @@ export const SITE_CONFIG: SiteConfig = {
   verse: "﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ ﴾",
   verseRef: "سورة الروم — الآية 21",
   photos: {
-    hero: "src/assets/images/gallery/gallery2.avif",
+    hero: "src/assets/images/gallery/gallery2.jpg",
     gallery: [
-      "src/assets/images/gallery/gallery1.avif",
-      "src/assets/images/gallery/gallery2.avif",
-      "src/assets/images/gallery/gallery3.avif",
-      "src/assets/images/gallery/gallery4.avif",
-      "src/assets/images/gallery/gallery5.avif",
-      "src/assets/images/gallery/gallery6.avif",
-      "src/assets/images/gallery/gallery7.avif",
-      "src/assets/images/gallery/gallery8.avif",
-      "src/assets/images/gallery/gallery9.avif",
-      "src/assets/images/gallery/gallery10.avif",
+      "src/assets/images/gallery/gallery1.jpg",
+      "src/assets/images/gallery/gallery2.jpg",
+      "src/assets/images/gallery/gallery3.jpg",
+      "src/assets/images/gallery/gallery4.jpg",
+      "src/assets/images/gallery/gallery5.jpg",
+      "src/assets/images/gallery/gallery6.jpg",
+      "src/assets/images/gallery/gallery7.jpg",
+      "src/assets/images/gallery/gallery8.jpg",
+      "src/assets/images/gallery/gallery9.jpg",
+      "src/assets/images/gallery/gallery10.jpg",
     ],
   },
   socials: {

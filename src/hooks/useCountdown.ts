@@ -34,7 +34,7 @@ function getCountdown(target: string): CountdownValues {
 }
 
 /**
- * عدّاد تنازلي حي لموعد الزفاف.
+ * عدّاد تنازلي حي لموعد الخطوبة.
  */
 export function useCountdown(): CountdownValues {
   const [values, setValues] = useState<CountdownValues>(() =>

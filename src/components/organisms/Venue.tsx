@@ -26,7 +26,7 @@ export default function Venue() {
       <SectionTitle
         eyebrow="يسرنا استقبالكم في"
         title="مكان إقامة الحفل"
-        subtitle="نتشرّف بحضوركم ونسعد بشهادة حضوركم في يوم زفافنا"
+        subtitle="نتشرّف بحضوركم ونسعد بمشاركتكم الفرحة في حفل خطوبتنا"
       />
 
       <motion.div

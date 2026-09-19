@@ -28,8 +28,8 @@ const PROGRAM: ProgramItem[] = [
   },
   {
     time: "8:00 م",
-    title: "عقد القران",
-    description: "مراسم عقد القران بحضوركم المبارك بإذن الله",
+    title: "لبس الدبل والخطوبة",
+    description: "مراسم الخطوبة ولبس الدبل بحضوركم المبارك بإذن الله",
     icon: HeartHandshake,
   },
   {
@@ -41,7 +41,7 @@ const PROGRAM: ProgramItem[] = [
   {
     time: "10:30 م",
     title: "الرقصة الأولى",
-    description: "لحظة العمر مع الرقصة الأولى للعروسين",
+    description: "لحظة العمر مع الرقصة الأولى للخطيبين",
     icon: Music4,
   },
   {

@@ -11,7 +11,7 @@ interface IntroSequenceProps {
 type Phase = "card" | "door";
 
 /**
- * يتسلسل الافتتاح: بطاقة الزفاف -> الباب وصالة الزفاف -> اختفاء تدريجي.
+ * يتسلسل الافتتاح: بطاقة الخطوبة -> الباب وصالة الحفل -> اختفاء تدريجي.
  */
 export default function IntroSequence({ onFinish }: IntroSequenceProps) {
   const [phase, setPhase] = useState<Phase>("card");

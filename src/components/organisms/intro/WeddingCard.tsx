@@ -182,7 +182,7 @@ export default function WeddingCard({ onComplete }: WeddingCardProps) {
             <span className="absolute bottom-5 left-5 text-xl text-gold-dark/80 sm:text-2xl">❀</span>
 
             <h1 className="font-calligraphy text-3xl font-bold leading-relaxed text-wine sm:text-6xl">
-              دَعْوَةُ زِفَاف
+              دَعْوَةُ خِطُوبَة
             </h1>
             <div className="flex items-center gap-3 text-gold-dark">
               <span className="h-px w-10 bg-gold-dark/60 sm:w-16" />

@@ -10,7 +10,7 @@ export default function Footer() {
   const { couple, socials, venue, dateLabel, timeLabel } = SITE_CONFIG;
   const [copied, setCopied] = useState(false);
 
-  const inviteMessage = `🌹 دعوة زفاف 🌹\nيُشرّفنا حضوركم ودعوتكم لحضور حفل زفاف ${couple.groom} و ${couple.bride}\n📅 ${dateLabel} — ${timeLabel}\n📍 ${venue.name}، ${venue.address}، ${venue.city}\n${window.location.href}`;
+  const inviteMessage = `🌹 دعوة خطوبة 🌹\nيُشرّفنا حضوركم ودعوتكم لحضور حفل خطوبة ${couple.groom} و ${couple.bride}\n📅 ${dateLabel} — ${timeLabel}\n📍 ${venue.name}، ${venue.address}، ${venue.city}\n${window.location.href}`;
 
   const copyLink = async () => {
     try {
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-10 text-xs text-muted-foreground">
-            © {new Date().getFullYear()} — دعوة زفاف {couple.groom} و {couple.bride}
+            © {new Date().getFullYear()} — دعوة خطوبة {couple.groom} و {couple.bride}
           </p>
           <p className="mt-1 text-xs text-muted-foreground">
             صُنع بكل الحب{" "}

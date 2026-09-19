@@ -104,7 +104,7 @@ export default function Rsvp() {
       <SectionTitle
         eyebrow="نقترب من اللحظة"
         title="تأكيد الحضور"
-        subtitle="أخبرونا إن كنتم ستنضمون إلى فرحتنا، واتركوا كلمة لعريسنا"
+        subtitle="أخبرونا إن كنتم ستنضمون إلى فرحتنا، واتركوا كلمة للخطيبين"
       />
 
       <motion.div
@@ -218,7 +218,7 @@ export default function Rsvp() {
 
             {/* الرسالة */}
             <div className="space-y-2">
-              <Label htmlFor="rsvp-message">كلمة للعروس والعريس</Label>
+              <Label htmlFor="rsvp-message">كلمة للخطيبين</Label>
               <Textarea
                 id="rsvp-message"
                 rows={4}

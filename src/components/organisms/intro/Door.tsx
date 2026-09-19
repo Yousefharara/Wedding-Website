@@ -12,7 +12,7 @@ interface DoorProps {
 const TOTAL_DURATION_MS = 4800;
 
 /**
- * افتتاحية الباب: بابان يفتحان من الوسط ليكشِفان صالة الزفاف (صورة حقيقية) مع تقريب للصالة.
+ * افتتاحية الباب: بابان يفتحان من الوسط ليكشِفان صالة الحفل (صورة حقيقية) مع تقريب للصالة.
  */
 export default function Door({ onComplete }: DoorProps) {
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Door({ onComplete }: DoorProps) {
       >
         <img
           src={hallImage}
-          alt="صالة الزفاف"
+          alt="صالة الحفل"
           className="h-full w-full object-cover"
         />
         {/* تظليل سفلي للقراءة + لمسة علوية */}
@@ -57,7 +57,7 @@ export default function Door({ onComplete }: DoorProps) {
             transition={{ delay: 2, duration: 0.8 }}
             className="font-calligraphy text-xl text-amber-50 drop-shadow-lg sm:text-2xl"
           >
-            أهلًا بكم في صالة زفاف {SITE_CONFIG.couple.groom} &amp;{" "}
+            أهلًا بكم في حفل خطوبة {SITE_CONFIG.couple.groom} &amp;{" "}
             {SITE_CONFIG.couple.bride}
           </motion.p>
         </div>

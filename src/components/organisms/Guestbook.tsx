@@ -89,7 +89,7 @@ export default function Guestbook() {
       <SectionTitle
         eyebrow="كلماتكم تسعدنا"
         title="صندوق التهنئة"
-        subtitle="اتركوا أجمل كلماتكم وتطلعاتكم للعروسين"
+        subtitle="اتركوا أجمل كلماتكم وتمنياتكم للخطيبين"
       />
 
       <div className="mt-12 grid gap-8 lg:grid-cols-5">
@@ -145,7 +145,7 @@ export default function Guestbook() {
             <div className="flex h-full min-h-48 flex-col items-center justify-center rounded-2xl border border-dashed border-gold/40 bg-white/50 p-8 text-center">
               <span className="text-4xl">🕊️</span>
               <p className="mt-3 font-semibold text-muted-foreground">
-                كن أول من يترك كلمة جميلة للعروسين
+                كن أول من يترك كلمة جميلة للخطيبين
               </p>
             </div>
           ) : (

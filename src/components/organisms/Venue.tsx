@@ -21,7 +21,7 @@ export default function Venue() {
   };
 
   return (
-    <section id="venue" className="relative container-md py-24">
+    <section id="venue" className="relative container-md py-24 overflow-x-hidden max-w-full">
       <OrnamentDivider className="mb-8" />
       <SectionTitle
         eyebrow="يسرنا استقبالكم في"

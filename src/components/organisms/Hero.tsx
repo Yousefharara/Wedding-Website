@@ -100,7 +100,7 @@ export default function Hero() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#fff6f8]/40 to-transparent" />
         </div>
-        <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-l from-gold-dark via-gold to-gold-dark px-6 py-2 font-calligraphy text-sm font-bold text-white shadow-lg">
+        <span className="absolute flex justify-center w-2/3 h-14 min-w-fit -bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-l from-gold-dark via-gold to-gold-dark px-2 py-2 font-calligraphy text-sm font-bold text-white shadow-lg">
           {dateLabel}
         </span>
 

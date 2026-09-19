@@ -28,7 +28,7 @@ export default function HomeTemplate({ entered }: HomeTemplateProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: entered ? 1 : 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="relative min-h-screen"
+      className="relative min-h-screen w-full max-w-full overflow-x-hidden"
     >
       <FloatingArtifacts enabled={entered} />
       <Navbar />

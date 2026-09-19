@@ -140,7 +140,7 @@ export default function Gallery() {
           onClick={handlePrev}
           disabled={active === 0}
           aria-label="الصورة السابقة"
-          className="gallery-nav-btn absolute right-2 top-1/2 z-20 -translate-y-1/2 opacity-90 hover:opacity-100 sm:-right-5"
+          className="gallery-nav-btn absolute right-1 top-1/2 z-20 -translate-y-1/2 opacity-90 hover:opacity-100 sm:-right-1"
         >
           <ChevronRight className="h-6 w-6 stroke-[2.5]" />
         </button>
@@ -151,7 +151,7 @@ export default function Gallery() {
           onClick={handleNext}
           disabled={active === count - 1}
           aria-label="الصورة التالية"
-          className="gallery-nav-btn absolute left-2 top-1/2 z-20 -translate-y-1/2 opacity-90 hover:opacity-100 sm:-left-5"
+          className="gallery-nav-btn absolute left-1 top-1/2 z-20 -translate-y-1/2 opacity-90 hover:opacity-100 sm:-left-1"
         >
           <ChevronLeft className="h-6 w-6 stroke-[2.5]" />
         </button>

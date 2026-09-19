@@ -1,4 +1,13 @@
 import type { SiteConfig } from "@/@types/wedding";
+import { gl_1, gl_2 } from "@/assets/images";
+import { gl_3 } from "@/assets/images";
+import { gl_4 } from "@/assets/images";
+import { gl_5 } from "@/assets/images";
+import { gl_6 } from "@/assets/images";
+import { gl_7 } from "@/assets/images";
+import { gl_8 } from "@/assets/images";
+import { gl_9 } from "@/assets/images";
+import { gl_10 } from "@/assets/images";
 
 const emailjs = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "",
@@ -26,18 +35,18 @@ export const SITE_CONFIG: SiteConfig = {
   verse: "﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ ﴾",
   verseRef: "سورة الروم — الآية 21",
   photos: {
-    hero: "src/assets/images/gallery/gallery2.jpg",
+    hero: gl_2,
     gallery: [
-      "src/assets/images/gallery/gallery1.jpg",
-      "src/assets/images/gallery/gallery2.jpg",
-      "src/assets/images/gallery/gallery3.jpg",
-      "src/assets/images/gallery/gallery4.jpg",
-      "src/assets/images/gallery/gallery5.jpg",
-      "src/assets/images/gallery/gallery6.jpg",
-      "src/assets/images/gallery/gallery7.jpg",
-      "src/assets/images/gallery/gallery8.jpg",
-      "src/assets/images/gallery/gallery9.jpg",
-      "src/assets/images/gallery/gallery10.jpg",
+      gl_1,
+      gl_2,
+      gl_3,
+      gl_4,
+      gl_5,
+      gl_6,
+      gl_7,
+      gl_8,
+      gl_9,
+      gl_10,
     ],
   },
   socials: {

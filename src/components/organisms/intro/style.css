@@ -1,0 +1,50 @@
+
+
+@media (max-width: 838px) {
+
+    .door.door-left {
+        scale: 1.8 1.3 !important;
+    }
+    
+    .door.door-right {
+        scale: -1.8 1.3 !important;
+    }
+    
+}
+
+
+@media (max-width: 645px) {
+
+    .door.door-left {
+        scale: 1.5 1.3 !important;
+    }
+    
+    .door.door-right {
+        scale: -1.5 1.3 !important;
+    }
+    
+}
+
+@media (max-width: 540px) {
+
+    .door.door-left {
+        scale: 1.2 1.3 !important;
+    }
+    
+    .door.door-right {
+        scale: -1.2 1.3 !important;
+    }
+    
+}
+
+@media (max-width: 420px) {
+
+    .door.door-left {
+        scale: 1 1.3 !important;
+    }
+    
+    .door.door-right {
+        scale: -1 1.3 !important;
+    }
+    
+}

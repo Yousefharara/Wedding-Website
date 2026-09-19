@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { SITE_CONFIG } from "@/constants/site";
 import doorLeft from "@/assets/images/door-left.png";
 import hallImage from "@/assets/images/Marriage hall.jpg";
+import './style.css'
 
 interface DoorProps {
   onComplete: () => void;
@@ -55,7 +56,7 @@ export default function Door({ onComplete }: DoorProps) {
 
       {/* الباب الأيسر (الصورة الأصلية) */}
       <motion.div
-        className="absolute inset-y-0 left-0 z-10 w-1/2 overflow-hidden"
+        className=" absolute inset-y-0 left-0 z-10 w-1/2 overflow-hidden"
         style={{ transformOrigin: "left center", backfaceVisibility: "hidden" }}
         initial={{ rotateY: 0 }}
         animate={{ rotateY: -110 }}
@@ -64,7 +65,7 @@ export default function Door({ onComplete }: DoorProps) {
         <img
           src={doorLeft}
           alt=""
-          className="h-full w-full object-cover object-center scale-x-180 "
+          className="door door-left h-full w-full object-cover object-center scale-x-180 "
           draggable={false}
         />
       </motion.div>
@@ -80,7 +81,7 @@ export default function Door({ onComplete }: DoorProps) {
         <img
           src={doorLeft}
           alt=""
-          className="-scale-x-180 h-full w-full object-cover object-center"
+          className="door door-right -scale-x-180 h-full w-full object-cover object-center"
           draggable={false}
         />
       </motion.div>
